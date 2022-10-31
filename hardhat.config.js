@@ -1,6 +1,8 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 require("@nomicfoundation/hardhat-toolbox");
 
+require('@nomiclabs/hardhat-etherscan');
+
 const secret = require('./.secret.js');
 
 const pk = secret.pk;
