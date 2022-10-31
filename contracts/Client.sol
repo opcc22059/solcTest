@@ -34,7 +34,7 @@ contract Client {
         token = _token;
         sender = from;
         receiver = to;
-        IServer(server).transferETH(address(this));
+        IServer(server).transferETH{value:msg.value}(address(this));
     }
 
 }
